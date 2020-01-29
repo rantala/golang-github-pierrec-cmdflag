@@ -16,7 +16,7 @@ usage of flag by keeping its idioms and simply augment it with commands.}
 %global godocs          examples README.md
 
 Name:           %{goname}
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Augment the flag package with commands
 
 # Upstream license specification: BSD-3-Clause
@@ -46,5 +46,8 @@ BuildRequires:  golang(github.com/xo/dburl)
 %gopkgfiles
 
 %changelog
+* Wed Jan 29 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.0.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild
+
 * Thu Jul 25 15:49:19 CEST 2019 Robert-André Mauchin <zebob.m@gmail.com> - 0.0.2-1
 - Initial package
