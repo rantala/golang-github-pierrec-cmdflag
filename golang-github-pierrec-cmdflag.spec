@@ -16,16 +16,13 @@ usage of flag by keeping its idioms and simply augment it with commands.}
 %global godocs          examples README.md
 
 Name:           %{goname}
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Augment the flag package with commands
 
 # Upstream license specification: BSD-3-Clause
 License:        BSD
 URL:            %{gourl}
 Source0:        %{gosource}
-
-BuildRequires:  golang(github.com/lib/pq)
-BuildRequires:  golang(github.com/xo/dburl)
 
 %description
 %{common_description}
@@ -46,6 +43,9 @@ BuildRequires:  golang(github.com/xo/dburl)
 %gopkgfiles
 
 %changelog
+* Fri Jan 08 2021 Tommi Rantala <tommi.t.rantala@nokia.com> - 0.0.2-4
+- Remove needless BuildRequires
+
 * Mon Jul 27 2020 Fedora Release Engineering <releng@fedoraproject.org> - 0.0.2-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
